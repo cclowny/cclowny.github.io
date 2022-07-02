@@ -1,0 +1,148 @@
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+
+  .p {
+      font-size: 50pt;
+  }
+
+  .header {
+    padding: 170px;
+    text-align: center;
+    background: #171717;
+    color: white;
+  }
+
+  .header h1 {
+    font-size: 40px;
+  }
+
+  .navbar {
+    overflow: hidden;
+    background-color: #171717;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 1;
+  }
+
+  .navbar2 {
+    overflow: hidden;
+    background-color: #282828;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 1;
+  }
+
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+
+  .navbar a.right {
+    float: right;
+  }
+
+  .navbar a:hover {
+    background-color: rgb(40, 39, 39);
+    color: black;
+  }
+
+  .navbar a.active {
+    background-color: 171717;
+    color: rgb(247, 240, 240);
+  }
+
+  .row {  
+    display: -ms-flexbox; 
+    display: flex;
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+  }
+
+  .side {
+    -ms-flex: 30%;
+    flex: 30%;
+    background-color: #ffffff;
+    padding: 40px;
+  }
+
+  .main {   
+    -ms-flex: 70%;
+    flex: 70%;
+    background-color: #7d7c7c;
+    padding: 35px;
+  }
+
+  .text {
+      color: #ffffff;
+  }
+
+  .fakeimgcon {
+    background-color: #595757;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+  }
+
+  .fakeimgab {
+    background-color: #595757;
+    width: 55%;
+    padding: 20px;
+    display: flex;
+  }
+
+  .fakeimgab2 {
+    background-color: #595757;
+    width: 70%;
+    padding: 20px;
+    display: flex;
+  }
+
+  .fakeimgab3 {
+    background-color: #595757;
+    width: 50%;
+    padding: 20px;
+    display: flex;
+  }
+
+  .fakeimgab4 {
+    background-color: #595757;
+    width: 60%;
+    padding: 20px;
+    display: flex;
+  }
+
+
+  .column {
+    float: left;
+    width: 50.00%;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media screen and (max-width: 700px) {
+    .row {   
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  }
